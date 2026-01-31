@@ -1,9 +1,3 @@
-firebase.auth().onAuthStateChanged(user => {
-    if (!user) {
-        window.location.href = "login.html";
-    }
-});
-
 let subjects = JSON.parse(localStorage.getItem("subjects")) || [];
 
 function addSubject() {
